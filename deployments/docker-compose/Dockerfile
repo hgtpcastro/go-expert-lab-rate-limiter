@@ -12,7 +12,7 @@ FROM alpine:3.19
 
 WORKDIR /app
 COPY --from=builder /app/bin/api .
-COPY --from=builder /app/cmd/app/.env .
+COPY --from=builder /app/deployments/docker-compose/.env .
 
 RUN ls -lah
 

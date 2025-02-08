@@ -6,7 +6,7 @@ O rate limiter é configurável para realizar a checagem de limites por IP ou to
 A configuração é realizada através de variáveis de ambiente declaradas no arquivo `.env`
 
 ## Configuração
-Ajuste-o o arquivo `.env` presente na pasta _./cmd/app_, conforme necessidade. Por padrão, os seguintes valores são utilizados:
+Ajuste-o o arquivo `.env` presente na pasta _./deployments/docker-compose_, conforme necessidade. Por padrão, os seguintes valores são utilizados:
 
 ```sh
 APP_PORT=8080 # Porta do servidor Web
@@ -35,6 +35,11 @@ RATE_PERIOD_WINDOW_SECONDS=60 # Período de tempo em segundos
 ### Remover os containers
 ```bash
     make clean
+```
+
+### Rodar os testes de unidade
+```bash
+    make test
 ```
 
 ### Rodar os testes de carga

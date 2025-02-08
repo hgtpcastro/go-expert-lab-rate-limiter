@@ -14,7 +14,7 @@ import (
 )
 
 func main() {
-	//cfg, err := config.Load("./cmd/app/") // <- Use em tempo de execução
+	//cfg, err := config.Load("./deployments/docker-compose") // <- Use em tempo de execução
 	cfg, err := config.Load(".") // <- Use para debug | docker
 	if err != nil {
 		panic(err)
